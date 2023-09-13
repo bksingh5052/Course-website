@@ -25,7 +25,7 @@ const Card = ({course,likedCourses,setLikedCourses}) => {
   return (
     <div className='w-[300px] bg-[#2A2B44] m-2 rounded-md overflow-hidden text-white'> 
      <div className='relative'>
-      <img src={course.image.url} alt="Course Image"/>
+      <img src={course.image.url} alt="Course Data"/>
       <div className='w-[40px] h-[40px] rounded-full bg-white absolute right-2 -bottom-5 flex justify-center items-center'>
       <button onClick={handleLike}>
         {likedCourses.includes(course.id) ? (<FcLike fontSize='1.75rem'/>):(<FcLikePlaceholder fontSize='1.75rem'/>)}
